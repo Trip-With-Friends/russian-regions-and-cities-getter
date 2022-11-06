@@ -195,6 +195,8 @@ class Api:
             except:
                 pass
 
+        cities_list = sorted(list(set(cities_list)))
+
         final_dict[region_full_name] = cities_list
         return final_dict
 
